@@ -1,11 +1,16 @@
-import '../styles/preview.css';
+import "../styles/preview.css";
+import PreviewHeader from "./PreviewHeader";
+import PreviewEducation from "./PreviewEducation";
+import PreviewExperience from "./PreviewExperience";
 
 function Preview() {
-    return (
-        <div id="preview">
-        <h2>Testing Preview</h2>
-        </div>
-    )
+  return (
+    <div id="preview">
+      <PreviewHeader />
+      <PreviewEducation />
+      <PreviewExperience />
+    </div>
+  );
 }
 
 export default Preview;
