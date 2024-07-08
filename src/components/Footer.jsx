@@ -1,8 +1,10 @@
+import '../styles/footer.css';
+
 function Footer() {
     return (
-        <>
-        <h2>Testing Footer</h2>
-        </>
+        <div id="footer">
+        <p>Testing Footer</p>
+        </div>
     )
 }
 

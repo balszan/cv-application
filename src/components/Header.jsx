@@ -1,8 +1,10 @@
+import '../styles/header.css'
+
 function Header() {
     return (
-        <>
-        <h2>Testing Header</h2>
-        </>
+        <div id="header">
+        <h2>CV Builder</h2>
+        </div>
     )
 }
 
