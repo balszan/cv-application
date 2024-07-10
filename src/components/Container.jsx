@@ -13,7 +13,7 @@ export default function Container() {
   return (
     <>
       <Interactive generalData={generalData} setGeneralData={setGeneralData} />
-      <Preview />
+      <Preview generalData={generalData} setGeneralData={setGeneralData} />
     </>
   )
 }

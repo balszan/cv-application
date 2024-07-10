@@ -1,11 +1,9 @@
-function PreviewHeader() {
+function PreviewHeader({ generalData, setGeneralData }) {
+  console.log(generalData)
   return (
     <div className="header-container">
       <h2 className="previewTitle">Placeholder</h2>
       <div className="general-container">
-        <p className="previewGeneral" id="fullName">
-          Name Placeholder
-        </p>
         <p className="previewGeneral" id="email">
           Email Placeholder
         </p>
@@ -17,7 +15,7 @@ function PreviewHeader() {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
-export default PreviewHeader;
+export default PreviewHeader
