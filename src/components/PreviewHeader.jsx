@@ -1,17 +1,20 @@
 function PreviewHeader({ generalData, setGeneralData }) {
-  console.log(generalData)
+  const { fullname, email, phone, city } = generalData
+
+  console.log(Object.keys(generalData))
+  console.log(fullname)
   return (
     <div className="header-container">
-      <h2 className="previewTitle">Placeholder</h2>
+      <h2 className="previewTitle">{fullname || "Name Placeholder"}</h2>
       <div className="general-container">
         <p className="previewGeneral" id="email">
-          Email Placeholder
+          {email || "Email Placeholder"}
         </p>
         <p className="previewGeneral" id="phone">
-          Phone Placeholder
+          {phone || "Phone Placeholder"}
         </p>
         <p className="previewGeneral" id="city">
-          City Placeholder
+          {city || "City Placeholder"}
         </p>
       </div>
     </div>

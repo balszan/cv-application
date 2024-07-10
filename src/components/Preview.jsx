@@ -3,7 +3,7 @@ import PreviewHeader from "./PreviewHeader"
 import PreviewEducation from "./PreviewEducation"
 import PreviewExperience from "./PreviewExperience"
 
-function Preview(generalData, setGeneralData) {
+function Preview({ generalData, setGeneralData }) {
   return (
     <div id="preview">
       <PreviewHeader
