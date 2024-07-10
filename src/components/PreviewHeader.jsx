@@ -1,8 +1,6 @@
 function PreviewHeader({ generalData, setGeneralData }) {
   const { fullname, email, phone, city } = generalData
 
-  console.log(Object.keys(generalData))
-  console.log(fullname)
   return (
     <div className="header-container">
       <h2 className="previewTitle">{fullname || "Name Placeholder"}</h2>
