@@ -1,14 +1,14 @@
-import General from "./General";
-import Education from "./Education";
-import Experience from "./Experience";
-import "../styles/interactive.css";
-import "../styles/interactive-section.css";
+import General from "./General"
+import Education from "./Education"
+import Experience from "./Experience"
+import "../styles/interactive.css"
+import "../styles/interactive-section.css"
 
-function Interactive() {
+function Interactive({ generalData, setGeneralData }) {
   return (
     <div id="interactive">
       <div className="interactive-section">
-        <General />
+        <General generalData={generalData} setGeneralData={setGeneralData} />
       </div>
 
       <div className="interactive-section">
@@ -19,7 +19,7 @@ function Interactive() {
         <Experience />
       </div>
     </div>
-  );
+  )
 }
 
-export default Interactive;
+export default Interactive

@@ -1,10 +1,16 @@
-function General() {
+function General({ generalData, setGeneralData }) {
+  const { fullname, email, phone, city } = generalData
   return (
     <>
       <h2>General Information</h2>
       <form id="general-information" className="interactive-section">
         <label htmlFor="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname"></input>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          defaultValue={fullname}
+        ></input>
 
         <label htmlFor="email">Email:</label>
         <input type="email" id="email" name="email"></input>
@@ -18,7 +24,7 @@ function General() {
         <button type="submit">Submit</button>
       </form>
     </>
-  );
+  )
 }
 
-export default General;
+export default General
