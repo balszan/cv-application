@@ -1,6 +1,6 @@
-import Interactive from "./Interactive";
-import Preview from "./Preview";
-import { useState } from "react";
+import Interactive from "./Interactive"
+import Preview from "./Preview"
+import { useState } from "react"
 
 export default function Container() {
   const [generalData, setGeneralData] = useState({
@@ -8,7 +8,7 @@ export default function Container() {
     email: "",
     phone: "",
     city: "",
-  });
+  })
 
   const [educationData, setEducationData] = useState({
     school: "",
@@ -16,7 +16,7 @@ export default function Container() {
     start: "",
     finish: "",
     location: "",
-  });
+  })
 
   return (
     <>
@@ -26,7 +26,12 @@ export default function Container() {
         educationData={educationData}
         setEducationData={setEducationData}
       />
-      <Preview generalData={generalData} setGeneralData={setGeneralData} />
+      <Preview
+        generalData={generalData}
+        setGeneralData={setGeneralData}
+        educationData={educationData}
+        setEducationData={setEducationData}
+      />
     </>
-  );
+  )
 }
