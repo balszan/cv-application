@@ -19,11 +19,7 @@ function General({ generalData, setGeneralData }) {
   return (
     <>
       <h2>General Information</h2>
-      <form
-        id="general-informati
-      on"
-        className="interactive-section"
-      >
+      <form id="general-information" className="interactive-section">
         <label htmlFor="fullname">Full Name:</label>
         <input
           type="text"
@@ -61,7 +57,7 @@ function General({ generalData, setGeneralData }) {
         ></input>
 
         <button type="submit" onClick={handleSubmit}>
-          Submit
+          Save
         </button>
       </form>
     </>

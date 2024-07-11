@@ -23,10 +23,10 @@ function Experience() {
         <label htmlFor="description">Description:</label>
         <input type="text" id="description" name="description"></input>
 
-        <button type="submit">Submit</button>
+        <button type="submit">Save</button>
       </form>
     </>
-  );
+  )
 }
 
-export default Experience;
+export default Experience
