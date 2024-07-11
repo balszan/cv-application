@@ -1,11 +1,13 @@
-import "../styles/footer.css";
+import "../styles/footer.css"
 
 function Footer() {
   return (
     <div id="footer">
-      <p>Testing Footer</p>
+      <p>
+        lovingly made by <a href="https://github.com/balszan/">balszan</a>
+      </p>
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer
