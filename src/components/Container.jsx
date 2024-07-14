@@ -18,6 +18,18 @@ export default function Container() {
     location: "",
   })
 
+  const [experienceData, setExperienceData] = useState([])
+
+  const [experienceSingleData, setExperienceSingleData] = useState({
+    companyName: "",
+    title: "",
+    start: "",
+    finish: "",
+    location: "",
+    description: "",
+    id: crypto.randomUUID(),
+  })
+
   return (
     <>
       <Interactive
@@ -25,12 +37,20 @@ export default function Container() {
         setGeneralData={setGeneralData}
         educationData={educationData}
         setEducationData={setEducationData}
+        experienceData={experienceData}
+        setExperienceData={setExperienceData}
+        experienceSingleData={experienceSingleData}
+        setExperienceSingleData={setExperienceSingleData}
       />
       <Preview
         generalData={generalData}
         setGeneralData={setGeneralData}
         educationData={educationData}
         setEducationData={setEducationData}
+        experienceData={experienceData}
+        setExperienceData={setExperienceData}
+        experienceSingleData={experienceSingleData}
+        setExperienceSingleData={setExperienceSingleData}
       />
     </>
   )

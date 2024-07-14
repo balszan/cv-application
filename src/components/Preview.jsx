@@ -1,13 +1,17 @@
-import "../styles/preview.css";
-import PreviewHeader from "./PreviewHeader";
-import PreviewEducation from "./PreviewEducation";
-import PreviewExperience from "./PreviewExperience";
+import "../styles/preview.css"
+import PreviewHeader from "./PreviewHeader"
+import PreviewEducation from "./PreviewEducation"
+import PreviewExperience from "./PreviewExperience"
 
 function Preview({
   generalData,
   setGeneralData,
   educationData,
   setEducationData,
+  experienceData,
+  setExperienceData,
+  experienceSingleData,
+  setExperienceSingleData,
 }) {
   return (
     <div id="preview">
@@ -19,9 +23,14 @@ function Preview({
         educationData={educationData}
         setEducationData={setEducationData}
       />
-      <PreviewExperience />
+      <PreviewExperience
+        experienceData={experienceData}
+        setExperienceData={setExperienceData}
+        experienceSingleData={experienceSingleData}
+        setExperienceSingleData={setExperienceSingleData}
+      />
     </div>
-  );
+  )
 }
 
-export default Preview;
+export default Preview
